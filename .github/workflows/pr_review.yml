@@ -23,12 +23,3 @@ jobs:
           command: "/review"
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           gemini-api-key: ${{ secrets.GEMINI_API_KEY }}
-                  with:
-          fetch-depth: 0
-
-      - name: Run Gemini PR Review Action
-        uses: google-github-actions/run-gemini-cli@v1
-        with:
-          command: "/review"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          gemini-api-key: ${{ secrets.GEMINI_API_KEY }}
